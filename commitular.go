@@ -1,4 +1,4 @@
-package commitular
+package main
 
 import (
 	"fmt"
