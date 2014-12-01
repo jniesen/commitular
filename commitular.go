@@ -1,9 +1,14 @@
-package main
+package commitular
 
 import (
+	"fmt"
 	"github.com/codegangsta/cli"
 	"os"
 )
+
+func FormatSubject(changeType string, changeScope string, description string) string {
+	return fmt.Sprintf("%s(%s): %s", changeType, changeScope, description)
+}
 
 func main() {
 	app := cli.NewApp()
